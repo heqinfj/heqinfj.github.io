@@ -146,6 +146,8 @@
                     </span>
                     <div class="tags text-center">
                         
+                        <a class="tag" href="/tags/#java 线程 并发" title="java 线程 并发">java 线程 并发</a>
+                        
                     </div>
                 </div>
             </div>
@@ -164,7 +166,19 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                
+                <pre><code>public class MQProducer {
+    private static Logger logger = LoggerFactory.getLogger(MQProducer.class);
+    private MQProducer(){    
+
+    }
+    public static MQProducer getInstance(){
+        if (producer == null ) {
+          producer = new MQProducer();
+        }
+        return producer;
+    }
+}
+</code></pre>
                 <hr>
                 
 
